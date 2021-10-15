@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 8
 Title "Microcontrolador principal"
 Date "2021-10-11"
 Rev ""
@@ -398,7 +398,7 @@ L Device:R R?
 U 1 1 616BC8FE
 P 4900 2500
 F 0 "R?" H 4970 2546 50  0000 L CNN
-F 1 "1k" H 4970 2455 50  0000 L CNN
+F 1 "10k" H 4970 2455 50  0000 L CNN
 F 2 "" V 4830 2500 50  0001 C CNN
 F 3 "~" H 4900 2500 50  0001 C CNN
 	1    4900 2500
