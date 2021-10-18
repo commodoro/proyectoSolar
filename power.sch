@@ -262,7 +262,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 4400 5600 4400
 $Comp
-L Device:XL7005A U5
+L Local:XL7005A U5
 U 1 1 616E3EAE
 P 3800 4250
 F 0 "U5" H 3800 4715 50  0000 C CNN
@@ -393,7 +393,7 @@ $EndComp
 Wire Wire Line
 	5100 2650 5100 2800
 $Comp
-L Device:XL7005A U6
+L Local:XL7005A U6
 U 1 1 6171D115
 P 3950 2700
 F 0 "U6" H 3950 3165 50  0000 C CNN
@@ -418,25 +418,11 @@ Wire Wire Line
 Wire Wire Line
 	4300 3300 4300 2950
 Connection ~ 4600 3300
-Wire Wire Line
-	3450 4050 3450 4200
 Connection ~ 3450 4950
 Wire Wire Line
 	3450 4950 4200 4950
-Connection ~ 3450 4200
-Wire Wire Line
-	3450 4200 3450 4350
-Connection ~ 3450 4350
-Wire Wire Line
-	3450 4350 3450 4500
-Connection ~ 3450 4500
-Wire Wire Line
-	3450 4500 3450 4950
-Wire Wire Line
-	3450 4050 3450 3300
 Wire Wire Line
 	3450 2500 3600 2500
-Connection ~ 3450 4050
 Wire Wire Line
 	3600 2650 3450 2650
 Connection ~ 3450 2650
@@ -515,4 +501,6 @@ Wire Wire Line
 Wire Wire Line
 	6600 2300 8550 2300
 Connection ~ 6600 2300
+Wire Wire Line
+	3450 3300 3450 4950
 $EndSCHEMATC
