@@ -13,4 +13,788 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Connector_Generic:Conn_01x17 J2
+U 1 1 61B1E660
+P 1650 2250
+F 0 "J2" H 1568 1225 50  0000 C CNN
+F 1 "Conn_01x17" H 1568 1316 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x17_Pitch2.54mm" H 1650 2250 50  0001 C CNN
+F 3 "~" H 1650 2250 50  0001 C CNN
+	1    1650 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 1450 2350 1450
+Text Label 2350 1450 2    50   ~ 0
+FANCTR
+Wire Wire Line
+	1850 1550 2350 1550
+Wire Wire Line
+	1850 1650 2350 1650
+Wire Wire Line
+	1850 2150 2350 2150
+Wire Wire Line
+	1850 2250 2350 2250
+Wire Wire Line
+	1850 2350 2350 2350
+Wire Wire Line
+	1850 2550 2350 2550
+Wire Wire Line
+	1850 2650 2350 2650
+Wire Wire Line
+	1850 2850 2350 2850
+Wire Wire Line
+	1850 3050 2350 3050
+Text Label 2350 1550 2    50   ~ 0
+TFB
+Text Label 2350 1650 2    50   ~ 0
+VFB
+$Comp
+L power:+12V #PWR029
+U 1 1 61B202C9
+P 3250 1400
+F 0 "#PWR029" H 3250 1250 50  0001 C CNN
+F 1 "+12V" H 3265 1573 50  0000 C CNN
+F 2 "" H 3250 1400 50  0001 C CNN
+F 3 "" H 3250 1400 50  0001 C CNN
+	1    3250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR025
+U 1 1 61B20D59
+P 2650 1400
+F 0 "#PWR025" H 2650 1250 50  0001 C CNN
+F 1 "+5V" H 2665 1573 50  0000 C CNN
+F 2 "" H 2650 1400 50  0001 C CNN
+F 3 "" H 2650 1400 50  0001 C CNN
+	1    2650 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1400 2650 1750
+Wire Wire Line
+	1850 1750 2650 1750
+Wire Wire Line
+	3250 1400 3250 1950
+Wire Wire Line
+	1850 1950 3250 1950
+$Comp
+L power:GND #PWR028
+U 1 1 61B21F04
+P 2950 1400
+F 0 "#PWR028" H 2950 1150 50  0001 C CNN
+F 1 "GND" H 2955 1227 50  0000 C CNN
+F 2 "" H 2950 1400 50  0001 C CNN
+F 3 "" H 2950 1400 50  0001 C CNN
+	1    2950 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 1400 2950 1850
+Wire Wire Line
+	1850 1850 2950 1850
+Wire Wire Line
+	2950 1850 2950 2050
+Wire Wire Line
+	1850 2050 2950 2050
+Connection ~ 2950 1850
+Wire Wire Line
+	2950 2450 2950 2050
+Wire Wire Line
+	1850 2450 2950 2450
+Connection ~ 2950 2050
+Wire Wire Line
+	2950 2750 2950 2450
+Wire Wire Line
+	1850 2750 2950 2750
+Connection ~ 2950 2450
+Wire Wire Line
+	2950 2950 2950 2750
+Wire Wire Line
+	1850 2950 2950 2950
+Connection ~ 2950 2750
+Text Label 2350 2150 2    50   ~ 0
+2HO
+Text Label 2350 2250 2    50   ~ 0
+VS2
+Text Label 2350 2350 2    50   ~ 0
+2LO
+Text Label 2350 2550 2    50   ~ 0
+1HO
+Text Label 2350 2650 2    50   ~ 0
+VS1
+Text Label 2350 2850 2    50   ~ 0
+1LO
+Text Label 2350 3050 2    50   ~ 0
+IFB
+$Comp
+L Transistor_FET:BSN20 Q5
+U 1 1 61B284F4
+P 2550 4250
+F 0 "Q5" H 2755 4296 50  0000 L CNN
+F 1 "BSN20" H 2755 4205 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2750 4175 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds31898.pdf" H 2550 4250 50  0001 L CNN
+	1    2550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 61B300E6
+P 2050 4250
+F 0 "R25" V 1843 4250 50  0000 C CNN
+F 1 "100" V 1934 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1980 4250 50  0001 C CNN
+F 3 "~" H 2050 4250 50  0001 C CNN
+	1    2050 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 4250 2350 4250
+Wire Wire Line
+	1900 4250 1500 4250
+Text Label 1500 4250 0    50   ~ 0
+FANCTR
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 61B351BF
+P 2950 3850
+F 0 "J3" H 3030 3842 50  0000 L CNN
+F 1 "FAN" H 3030 3751 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2950 3850 50  0001 C CNN
+F 3 "~" H 2950 3850 50  0001 C CNN
+	1    2950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR026
+U 1 1 61B3618C
+P 2650 3700
+F 0 "#PWR026" H 2650 3550 50  0001 C CNN
+F 1 "+12V" H 2665 3873 50  0000 C CNN
+F 2 "" H 2650 3700 50  0001 C CNN
+F 3 "" H 2650 3700 50  0001 C CNN
+	1    2650 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3700 2650 3850
+Wire Wire Line
+	2650 3850 2750 3850
+Wire Wire Line
+	2750 3950 2650 3950
+Wire Wire Line
+	2650 3950 2650 4050
+Wire Wire Line
+	2650 4450 2650 4650
+$Comp
+L power:GND #PWR027
+U 1 1 61B3799E
+P 2650 4650
+F 0 "#PWR027" H 2650 4400 50  0001 C CNN
+F 1 "GND" H 2655 4477 50  0000 C CNN
+F 2 "" H 2650 4650 50  0001 C CNN
+F 3 "" H 2650 4650 50  0001 C CNN
+	1    2650 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH1
+U 1 1 61B45D38
+P 2300 5700
+F 0 "TH1" H 2398 5746 50  0000 L CNN
+F 1 "Thermistor_NTC" H 2398 5655 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2300 5750 50  0001 C CNN
+F 3 "~" H 2300 5750 50  0001 C CNN
+	1    2300 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR023
+U 1 1 61B489CE
+P 2300 5350
+F 0 "#PWR023" H 2300 5200 50  0001 C CNN
+F 1 "+5V" H 2315 5523 50  0000 C CNN
+F 2 "" H 2300 5350 50  0001 C CNN
+F 3 "" H 2300 5350 50  0001 C CNN
+	1    2300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5350 2300 5550
+$Comp
+L Device:C C22
+U 1 1 61B4A2EA
+P 2300 6450
+F 0 "C22" H 2415 6496 50  0000 L CNN
+F 1 "10n" H 2415 6405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2338 6300 50  0001 C CNN
+F 3 "~" H 2300 6450 50  0001 C CNN
+	1    2300 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 61B4ADFC
+P 2300 6600
+F 0 "#PWR024" H 2300 6350 50  0001 C CNN
+F 1 "GND" H 2305 6427 50  0000 C CNN
+F 2 "" H 2300 6600 50  0001 C CNN
+F 3 "" H 2300 6600 50  0001 C CNN
+	1    2300 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5850 2300 6100
+Wire Wire Line
+	2300 6100 1900 6100
+Connection ~ 2300 6100
+Wire Wire Line
+	2300 6100 2300 6300
+Text Label 1900 6100 0    50   ~ 0
+TFB
+$Comp
+L Diode_Bridge:ABS6 D13
+U 1 1 61B4DA4E
+P 9800 3400
+F 0 "D13" H 9456 3354 50  0000 R CNN
+F 1 "ABS6" H 9456 3445 50  0000 R CNN
+F 2 "Diodes_SMD:Diode_Bridge_DFS" H 9950 3525 50  0001 L CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf" H 9800 3400 50  0001 C CNN
+	1    9800 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9500 3400 9400 3400
+$Comp
+L Device:R R35
+U 1 1 61B533BA
+P 9250 3400
+F 0 "R35" V 9043 3400 50  0000 C CNN
+F 1 "10k" V 9134 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 9180 3400 50  0001 C CNN
+F 3 "~" H 9250 3400 50  0001 C CNN
+	1    9250 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 61B53A7C
+P 9250 4100
+F 0 "R36" V 9043 4100 50  0000 C CNN
+F 1 "10k" V 9134 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 9180 4100 50  0001 C CNN
+F 3 "~" H 9250 4100 50  0001 C CNN
+	1    9250 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 61B54311
+P 8900 3750
+F 0 "RV1" H 8830 3841 50  0000 R CNN
+F 1 "10k" H 8830 3750 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Vishay_T7YA_Horizontal" H 8830 3659 50  0000 R CNN
+F 3 "~" H 8900 3750 50  0001 C CNN
+	1    8900 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3600 8900 3400
+Wire Wire Line
+	8900 3400 9100 3400
+Wire Wire Line
+	8900 3900 8900 4100
+Wire Wire Line
+	8900 4100 9100 4100
+Wire Wire Line
+	8750 3750 8550 3750
+$Comp
+L Device:C C23
+U 1 1 61B57B4C
+P 8550 4000
+F 0 "C23" H 8665 4046 50  0000 L CNN
+F 1 "10n" H 8665 3955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8588 3850 50  0001 C CNN
+F 3 "~" H 8550 4000 50  0001 C CNN
+	1    8550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 61B57B52
+P 8550 4150
+F 0 "#PWR032" H 8550 3900 50  0001 C CNN
+F 1 "GND" H 8555 3977 50  0000 C CNN
+F 2 "" H 8550 4150 50  0001 C CNN
+F 3 "" H 8550 4150 50  0001 C CNN
+	1    8550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3750 8550 3850
+Text Label 8300 3750 0    50   ~ 0
+VFB
+Connection ~ 8550 3750
+Wire Wire Line
+	8300 3750 8550 3750
+Wire Wire Line
+	10350 4100 9400 4100
+Wire Wire Line
+	10350 3400 10350 4100
+Wire Wire Line
+	10100 3400 10350 3400
+Wire Wire Line
+	9800 3100 9800 2900
+Wire Wire Line
+	9800 3850 10150 3850
+Wire Wire Line
+	9800 3700 9800 3850
+Wire Wire Line
+	9800 2900 10150 2900
+Text Label 10150 3850 2    50   ~ 0
+L
+Text Label 10150 2900 2    50   ~ 0
+N
+$Comp
+L Diode:1N4148W D11
+U 1 1 61B7ACE2
+P 6700 1800
+F 0 "D11" H 6700 2017 50  0000 C CNN
+F 1 "1N4148W" H 6700 1926 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 6700 1625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 6700 1800 50  0001 C CNN
+	1    6700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF3205 Q8
+U 1 1 61B7ACE8
+P 7300 2150
+F 0 "Q8" H 7505 2196 50  0000 L CNN
+F 1 "IRF3205" H 7505 2105 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 7550 2075 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 7300 2150 50  0001 L CNN
+	1    7300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R31
+U 1 1 61B7ACEE
+P 6700 2150
+F 0 "R31" V 6493 2150 50  0000 C CNN
+F 1 "4.7" V 6584 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6630 2150 50  0001 C CNN
+F 3 "~" H 6700 2150 50  0001 C CNN
+	1    6700 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 61B7ACF4
+P 7150 2600
+F 0 "R33" V 6943 2600 50  0000 C CNN
+F 1 "10k" V 7034 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7080 2600 50  0001 C CNN
+F 3 "~" H 7150 2600 50  0001 C CNN
+	1    7150 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 2350 7400 2600
+Wire Wire Line
+	6850 1800 6950 1800
+Wire Wire Line
+	6950 1800 6950 2150
+Wire Wire Line
+	6850 2150 6950 2150
+Wire Wire Line
+	6950 2150 7100 2150
+Connection ~ 6950 2150
+Wire Wire Line
+	6550 1800 6400 1800
+Wire Wire Line
+	6400 1800 6400 2150
+Wire Wire Line
+	6400 2150 6550 2150
+Wire Wire Line
+	6400 2150 6150 2150
+Connection ~ 6400 2150
+Wire Wire Line
+	7000 2600 6950 2600
+Wire Wire Line
+	6950 2600 6950 2150
+Wire Wire Line
+	7300 2600 7400 2600
+Connection ~ 7400 2600
+$Comp
+L Diode:1N4148W D12
+U 1 1 61B8719B
+P 6700 3050
+F 0 "D12" H 6700 3267 50  0000 C CNN
+F 1 "1N4148W" H 6700 3176 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 6700 2875 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 6700 3050 50  0001 C CNN
+	1    6700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF3205 Q9
+U 1 1 61B871A1
+P 7300 3400
+F 0 "Q9" H 7505 3446 50  0000 L CNN
+F 1 "IRF3205" H 7505 3355 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 7550 3325 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 7300 3400 50  0001 L CNN
+	1    7300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 61B871A7
+P 6700 3400
+F 0 "R32" V 6493 3400 50  0000 C CNN
+F 1 "4.7" V 6584 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6630 3400 50  0001 C CNN
+F 3 "~" H 6700 3400 50  0001 C CNN
+	1    6700 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R34
+U 1 1 61B871AD
+P 7150 3850
+F 0 "R34" V 6943 3850 50  0000 C CNN
+F 1 "10k" V 7034 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7080 3850 50  0001 C CNN
+F 3 "~" H 7150 3850 50  0001 C CNN
+	1    7150 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3600 7400 3850
+Wire Wire Line
+	6850 3050 6950 3050
+Wire Wire Line
+	6950 3050 6950 3400
+Wire Wire Line
+	6850 3400 6950 3400
+Wire Wire Line
+	6950 3400 7100 3400
+Connection ~ 6950 3400
+Wire Wire Line
+	6550 3050 6400 3050
+Wire Wire Line
+	6400 3050 6400 3400
+Wire Wire Line
+	6400 3400 6550 3400
+Wire Wire Line
+	6400 3400 6150 3400
+Connection ~ 6400 3400
+Wire Wire Line
+	7000 3850 6950 3850
+Wire Wire Line
+	6950 3850 6950 3400
+Wire Wire Line
+	7300 3850 7400 3850
+Connection ~ 7400 3850
+Wire Wire Line
+	7400 3850 7400 4100
+Wire Wire Line
+	7400 2600 7400 2750
+Wire Wire Line
+	7400 1450 7400 1950
+Wire Wire Line
+	7400 2750 7800 2750
+Text Label 7800 2750 2    50   ~ 0
+VS1
+$Comp
+L Device:R_US R30
+U 1 1 61B9B773
+P 6400 4400
+F 0 "R30" H 6468 4446 50  0000 L CNN
+F 1 "0.01" H 6468 4355 50  0000 L CNN
+F 2 "Resistors_SMD:R_1812" V 6440 4390 50  0001 C CNN
+F 3 "~" H 6400 4400 50  0001 C CNN
+	1    6400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4250 6400 4100
+Wire Wire Line
+	6400 4550 6400 4700
+$Comp
+L power:GND #PWR031
+U 1 1 61BA221F
+P 6400 4700
+F 0 "#PWR031" H 6400 4450 50  0001 C CNN
+F 1 "GND" H 6405 4527 50  0000 C CNN
+F 2 "" H 6400 4700 50  0001 C CNN
+F 3 "" H 6400 4700 50  0001 C CNN
+	1    6400 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 7400 2750
+Wire Wire Line
+	7400 2750 7400 3200
+$Comp
+L power:+12V #PWR030
+U 1 1 61BAE807
+P 6400 1200
+F 0 "#PWR030" H 6400 1050 50  0001 C CNN
+F 1 "+12V" H 6415 1373 50  0000 C CNN
+F 2 "" H 6400 1200 50  0001 C CNN
+F 3 "" H 6400 1200 50  0001 C CNN
+	1    6400 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1200 6400 1450
+Text Label 6150 2150 0    50   ~ 0
+1HO
+Text Label 6150 3400 0    50   ~ 0
+1LO
+Text Label 4150 3400 0    50   ~ 0
+2LO
+Text Label 4150 2150 0    50   ~ 0
+2HO
+Text Label 5150 4100 0    50   ~ 0
+IFB
+Connection ~ 5400 4100
+Wire Wire Line
+	5400 4100 5150 4100
+Text Label 5800 2750 2    50   ~ 0
+VS2
+Wire Wire Line
+	5400 2750 5400 3200
+Connection ~ 5400 2750
+Wire Wire Line
+	5400 2750 5800 2750
+Wire Wire Line
+	5400 1450 5400 1950
+Wire Wire Line
+	5400 2600 5400 2750
+Wire Wire Line
+	5400 3850 5400 4100
+Connection ~ 5400 3850
+Wire Wire Line
+	5300 3850 5400 3850
+Wire Wire Line
+	4950 3850 4950 3400
+Wire Wire Line
+	5000 3850 4950 3850
+Connection ~ 4400 3400
+Wire Wire Line
+	4400 3400 4150 3400
+Wire Wire Line
+	4400 3400 4550 3400
+Wire Wire Line
+	4400 3050 4400 3400
+Wire Wire Line
+	4550 3050 4400 3050
+Connection ~ 4950 3400
+Wire Wire Line
+	4950 3400 5100 3400
+Wire Wire Line
+	4850 3400 4950 3400
+Wire Wire Line
+	4950 3050 4950 3400
+Wire Wire Line
+	4850 3050 4950 3050
+Wire Wire Line
+	5400 3600 5400 3850
+$Comp
+L Device:R R29
+U 1 1 61B87184
+P 5150 3850
+F 0 "R29" V 4943 3850 50  0000 C CNN
+F 1 "10k" V 5034 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5080 3850 50  0001 C CNN
+F 3 "~" H 5150 3850 50  0001 C CNN
+	1    5150 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 61B8717E
+P 4700 3400
+F 0 "R27" V 4493 3400 50  0000 C CNN
+F 1 "4.7" V 4584 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4630 3400 50  0001 C CNN
+F 3 "~" H 4700 3400 50  0001 C CNN
+	1    4700 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:IRF3205 Q7
+U 1 1 61B87178
+P 5300 3400
+F 0 "Q7" H 5505 3446 50  0000 L CNN
+F 1 "IRF3205" H 5505 3355 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 5550 3325 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 5300 3400 50  0001 L CNN
+	1    5300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W D10
+U 1 1 61B87172
+P 4700 3050
+F 0 "D10" H 4700 3267 50  0000 C CNN
+F 1 "1N4148W" H 4700 3176 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 4700 2875 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 4700 3050 50  0001 C CNN
+	1    4700 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 2600
+Wire Wire Line
+	5300 2600 5400 2600
+Wire Wire Line
+	4950 2600 4950 2150
+Wire Wire Line
+	5000 2600 4950 2600
+Connection ~ 4400 2150
+Wire Wire Line
+	4400 2150 4150 2150
+Wire Wire Line
+	4400 2150 4550 2150
+Wire Wire Line
+	4400 1800 4400 2150
+Wire Wire Line
+	4550 1800 4400 1800
+Connection ~ 4950 2150
+Wire Wire Line
+	4950 2150 5100 2150
+Wire Wire Line
+	4850 2150 4950 2150
+Wire Wire Line
+	4950 1800 4950 2150
+Wire Wire Line
+	4850 1800 4950 1800
+Wire Wire Line
+	5400 2350 5400 2600
+$Comp
+L Device:R R28
+U 1 1 61B63DE6
+P 5150 2600
+F 0 "R28" V 4943 2600 50  0000 C CNN
+F 1 "10k" V 5034 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5080 2600 50  0001 C CNN
+F 3 "~" H 5150 2600 50  0001 C CNN
+	1    5150 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 61B635B9
+P 4700 2150
+F 0 "R26" V 4493 2150 50  0000 C CNN
+F 1 "4.7" V 4584 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4630 2150 50  0001 C CNN
+F 3 "~" H 4700 2150 50  0001 C CNN
+	1    4700 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:IRF3205 Q6
+U 1 1 61B60DB4
+P 5300 2150
+F 0 "Q6" H 5505 2196 50  0000 L CNN
+F 1 "IRF3205" H 5505 2105 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 5550 2075 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 5300 2150 50  0001 L CNN
+	1    5300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W D9
+U 1 1 61B60885
+P 4700 1800
+F 0 "D9" H 4700 2017 50  0000 C CNN
+F 1 "1N4148W" H 4700 1926 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 4700 1625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 4700 1800 50  0001 C CNN
+	1    4700 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6400 1450
+Wire Wire Line
+	6400 1450 7400 1450
+Wire Wire Line
+	5400 1450 6400 1450
+Connection ~ 6400 4100
+Wire Wire Line
+	6400 4100 7400 4100
+Wire Wire Line
+	5400 4100 6400 4100
+$Comp
+L Device:Transformer_1P_1S T1
+U 1 1 61BD0834
+P 9350 2100
+F 0 "T1" H 9350 2481 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 9350 2390 50  0000 C CNN
+F 2 "Transformers_THT:Transformer_CHK_EI38-3VA_1xSec" H 9350 2100 50  0001 C CNN
+F 3 "~" H 9350 2100 50  0001 C CNN
+	1    9350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2300 8550 2300
+Text Label 8550 2300 0    50   ~ 0
+VS1
+Text Label 8550 1900 0    50   ~ 0
+VS2
+Wire Wire Line
+	8950 1900 8550 1900
+Wire Wire Line
+	9750 1900 9950 1900
+Text Label 10300 1900 2    50   ~ 0
+L
+Wire Wire Line
+	9750 2300 9950 2300
+Text Label 10300 2300 2    50   ~ 0
+N
+$Comp
+L Device:C C24
+U 1 1 61BECCC7
+P 9950 2100
+F 0 "C24" H 10065 2146 50  0000 L CNN
+F 1 "2.2uF" H 10065 2055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9988 1950 50  0001 C CNN
+F 3 "~" H 9950 2100 50  0001 C CNN
+	1    9950 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1950 9950 1900
+Connection ~ 9950 1900
+Wire Wire Line
+	9950 1900 10300 1900
+Wire Wire Line
+	9950 2250 9950 2300
+Connection ~ 9950 2300
+Wire Wire Line
+	9950 2300 10300 2300
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 61E06CAA
+P 9800 5350
+F 0 "J9" H 9880 5342 50  0000 L CNN
+F 1 "AC" H 9880 5251 50  0000 L CNN
+F 2 "Connectors:Banana_Jack_2Pin" H 9800 5350 50  0001 C CNN
+F 3 "~" H 9800 5350 50  0001 C CNN
+	1    9800 5350
+	1    0    0    -1  
+$EndComp
+Text Label 9250 5350 0    50   ~ 0
+L
+Text Label 9250 5450 0    50   ~ 0
+N
+Wire Wire Line
+	9600 5350 9250 5350
+Wire Wire Line
+	9600 5450 9250 5450
 $EndSCHEMATC

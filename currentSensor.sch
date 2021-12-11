@@ -13,8 +13,152 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5900 3500 2    50   Output ~ 0
+Text HLabel 4700 3700 0    50   Output ~ 0
 IP-
-Text HLabel 4050 3550 0    50   Input ~ 0
+Text HLabel 4700 3300 0    50   Input ~ 0
 IP+
+$Comp
+L Sensor_Current:ACS712xLCTR-20A U6
+U 1 1 61C260B3
+P 5550 3500
+F 0 "U6" H 5350 3050 50  0000 C CNN
+F 1 "ACS712xLCTR-20A" H 5050 3150 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5650 3150 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en" H 5550 3500 50  0001 C CNN
+	1    5550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3300 5150 3300
+Wire Wire Line
+	4700 3700 5150 3700
+Wire Wire Line
+	5550 3100 5550 2900
+Wire Wire Line
+	5550 2900 5700 2900
+$Comp
+L Device:C C20
+U 1 1 61C26F1D
+P 5850 2900
+F 0 "C20" V 5598 2900 50  0000 C CNN
+F 1 "4.7u" V 5689 2900 50  0000 C CNN
+F 2 "Capacitors_SMD:CP_Elec_3x5.3" H 5888 2750 50  0001 C CNN
+F 3 "~" H 5850 2900 50  0001 C CNN
+	1    5850 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 61C27599
+P 6150 3050
+F 0 "#PWR022" H 6150 2800 50  0001 C CNN
+F 1 "GND" H 6155 2877 50  0000 C CNN
+F 2 "" H 6150 3050 50  0001 C CNN
+F 3 "" H 6150 3050 50  0001 C CNN
+	1    6150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 61C29222
+P 5550 4000
+F 0 "#PWR021" H 5550 3750 50  0001 C CNN
+F 1 "GND" H 5555 3827 50  0000 C CNN
+F 2 "" H 5550 4000 50  0001 C CNN
+F 3 "" H 5550 4000 50  0001 C CNN
+	1    5550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4000 5550 3900
+Wire Wire Line
+	6000 2900 6150 2900
+Wire Wire Line
+	6150 2900 6150 3050
+Wire Wire Line
+	5550 2900 5550 2650
+Connection ~ 5550 2900
+$Comp
+L power:+5V #PWR020
+U 1 1 61C2A74C
+P 5550 2650
+F 0 "#PWR020" H 5550 2500 50  0001 C CNN
+F 1 "+5V" H 5565 2823 50  0000 C CNN
+F 2 "" H 5550 2650 50  0001 C CNN
+F 3 "" H 5550 2650 50  0001 C CNN
+	1    5550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 61C2AB8D
+P 6600 3150
+F 0 "R23" H 6670 3196 50  0000 L CNN
+F 1 "10k" H 6670 3105 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 6530 3150 50  0001 C CNN
+F 3 "~" H 6600 3150 50  0001 C CNN
+	1    6600 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 61C2ACF9
+P 6300 3500
+F 0 "R22" V 6093 3500 50  0000 C CNN
+F 1 "3.3k" V 6184 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6230 3500 50  0001 C CNN
+F 3 "~" H 6300 3500 50  0001 C CNN
+	1    6300 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 3500 6150 3500
+Wire Wire Line
+	6450 3500 6600 3500
+Wire Wire Line
+	6600 3300 6600 3500
+Wire Wire Line
+	6600 3000 6600 2900
+Wire Wire Line
+	6600 2900 6150 2900
+Connection ~ 6150 2900
+Connection ~ 6600 3500
+Wire Wire Line
+	6600 4100 6600 3950
+$Comp
+L Device:C C21
+U 1 1 61C2CBB3
+P 6600 3800
+F 0 "C21" H 6485 3754 50  0000 R CNN
+F 1 "2.2uF" H 6485 3845 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0603" H 6638 3650 50  0001 C CNN
+F 3 "~" H 6600 3800 50  0001 C CNN
+	1    6600 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 3650 6600 3500
+$Comp
+L Device:R R24
+U 1 1 61C2D83A
+P 7250 3500
+F 0 "R24" V 7043 3500 50  0000 C CNN
+F 1 "1k" V 7134 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7180 3500 50  0001 C CNN
+F 3 "~" H 7250 3500 50  0001 C CNN
+	1    7250 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3500 7650 3500
+Text GLabel 7650 3500 2    50   Output ~ 0
+A2
+Wire Wire Line
+	6600 3500 7100 3500
+Wire Wire Line
+	6600 4100 6100 4100
+Wire Wire Line
+	6100 4100 6100 3600
+Wire Wire Line
+	6100 3600 5950 3600
 $EndSCHEMATC
