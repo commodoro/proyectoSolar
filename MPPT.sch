@@ -531,7 +531,7 @@ AR Path="/61644C06/61744773" Ref="L3"  Part="1"
 AR Path="/61744773" Ref="L?"  Part="1" 
 F 0 "L3" V 8540 4420 50  0000 C CNN
 F 1 "60uH" V 8449 4420 50  0000 C CNN
-F 2 "Inductors_SMD:L_6.3x6.3_H3" H 8350 4420 50  0001 C CNN
+F 2 "Inductors_THT:L_Toroid_Vertical_L28.6mm_W14.3mm_P11.43mm_Bourns_5700" H 8350 4420 50  0001 C CNN
 F 3 "~" H 8350 4420 50  0001 C CNN
 	1    8350 4420
 	0    -1   -1   0   
@@ -589,7 +589,7 @@ AR Path="/61644C06/61744791" Ref="F2"  Part="1"
 AR Path="/61744791" Ref="F?"  Part="1" 
 F 0 "F2" V 9863 4420 50  0000 C CNN
 F 1 "35A" V 9954 4420 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm" V 9990 4420 50  0001 C CNN
+F 2 "Fuse_Holders_and_Fuses:BladeFuse-CarType" V 9990 4420 50  0001 C CNN
 F 3 "~" H 10060 4420 50  0001 C CNN
 	1    10060 4420
 	0    1    1    0   
@@ -743,7 +743,7 @@ AR Path="/61644C06/617447E5" Ref="F1"  Part="1"
 AR Path="/617447E5" Ref="F?"  Part="1" 
 F 0 "F1" V 1363 2460 50  0000 C CNN
 F 1 "35A" V 1454 2460 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm" V 1490 2460 50  0001 C CNN
+F 2 "Fuse_Holders_and_Fuses:BladeFuse-CarType" V 1490 2460 50  0001 C CNN
 F 3 "~" H 1560 2460 50  0001 C CNN
 	1    1560 2460
 	0    1    1    0   
@@ -883,7 +883,7 @@ AR Path="/61644C06/6174480B" Ref="J6"  Part="1"
 AR Path="/6174480B" Ref="Solar_Panel_?"  Part="1" 
 F 0 "J6" H 1268 3196 50  0000 L CNN
 F 1 "15-80V" H 1268 3105 50  0000 L CNN
-F 2 "Connectors:Banana_Jack_2Pin" V 1160 3210 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_2x_1-5mmDrill" V 1160 3210 50  0001 C CNN
 F 3 "~" V 1160 3210 50  0001 C CNN
 	1    1160 3150
 	1    0    0    -1  
@@ -896,7 +896,7 @@ AR Path="/61644C06/61744799" Ref="J7"  Part="1"
 AR Path="/61744799" Ref="Battery_?"  Part="1" 
 F 0 "J7" H 10598 5206 50  0000 L CNN
 F 1 "0-50V" H 10598 5115 50  0000 L CNN
-F 2 "Connectors:Banana_Jack_2Pin" V 10490 5220 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_2x_1-5mmDrill" V 10490 5220 50  0001 C CNN
 F 3 "~" V 10490 5220 50  0001 C CNN
 	1    10490 5160
 	1    0    0    -1  

@@ -784,7 +784,7 @@ U 1 1 61E06CAA
 P 9800 5350
 F 0 "J9" H 9880 5342 50  0000 L CNN
 F 1 "AC" H 9880 5251 50  0000 L CNN
-F 2 "Connectors:Banana_Jack_2Pin" H 9800 5350 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_2x_1-5mmDrill" H 9800 5350 50  0001 C CNN
 F 3 "~" H 9800 5350 50  0001 C CNN
 	1    9800 5350
 	1    0    0    -1  
