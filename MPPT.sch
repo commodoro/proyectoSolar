@@ -678,14 +678,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR014
 U 1 1 617447C8
-P 2260 3770
+P 1940 3770
 AR Path="/61644C06/617447C8" Ref="#PWR014"  Part="1" 
 AR Path="/617447C8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR014" H 2260 3520 50  0001 C CNN
-F 1 "GND" H 2265 3597 50  0000 C CNN
-F 2 "" H 2260 3770 50  0001 C CNN
-F 3 "" H 2260 3770 50  0001 C CNN
-	1    2260 3770
+F 0 "#PWR014" H 1940 3520 50  0001 C CNN
+F 1 "GND" H 1945 3597 50  0000 C CNN
+F 2 "" H 1940 3770 50  0001 C CNN
+F 3 "" H 1940 3770 50  0001 C CNN
+	1    1940 3770
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -788,7 +788,7 @@ Connection ~ 2260 3120
 Wire Wire Line
 	2260 3500 2260 3650
 Wire Wire Line
-	2260 3650 1860 3650
+	2260 3650 1940 3650
 Wire Wire Line
 	1860 3650 1860 3480
 Wire Wire Line
@@ -798,7 +798,7 @@ Wire Wire Line
 Connection ~ 2260 3650
 Connection ~ 3080 3310
 Wire Wire Line
-	2260 3770 2260 3650
+	1940 3770 1940 3650
 Wire Wire Line
 	1160 2140 1160 2460
 Wire Wire Line
@@ -810,11 +810,6 @@ Wire Wire Line
 Wire Wire Line
 	1160 2950 1160 2460
 Connection ~ 1160 2460
-Wire Wire Line
-	1160 3350 1160 3650
-Wire Wire Line
-	1160 3650 1860 3650
-Connection ~ 1860 3650
 Wire Wire Line
 	8680 5080 8680 5850
 Connection ~ 8680 5850
@@ -875,19 +870,6 @@ Wire Wire Line
 	5380 5100 5380 4720
 Wire Wire Line
 	6320 2800 6320 2610
-$Comp
-L Device:Battery J6
-U 1 1 6174480B
-P 1160 3150
-AR Path="/61644C06/6174480B" Ref="J6"  Part="1" 
-AR Path="/6174480B" Ref="Solar_Panel_?"  Part="1" 
-F 0 "J6" H 1268 3196 50  0000 L CNN
-F 1 "15-80V" H 1268 3105 50  0000 L CNN
-F 2 "Wire_Pads:SolderWirePad_2x_1-5mmDrill" V 1160 3210 50  0001 C CNN
-F 3 "~" V 1160 3210 50  0001 C CNN
-	1    1160 3150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Battery J7
 U 1 1 61744799
@@ -970,4 +952,50 @@ F 3 "~" H 7600 5240 50  0001 C CNN
 	1    7600 5240
 	1    0    0    -1  
 $EndComp
+Connection ~ 1940 3650
+Wire Wire Line
+	1940 3650 1860 3650
+$Comp
+L power:GND #PWR0101
+U 1 1 61CDFD8D
+P 1160 3465
+AR Path="/61644C06/61CDFD8D" Ref="#PWR0101"  Part="1" 
+AR Path="/61CDFD8D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0101" H 1160 3215 50  0001 C CNN
+F 1 "GND" H 1165 3292 50  0000 C CNN
+F 2 "" H 1160 3465 50  0001 C CNN
+F 3 "" H 1160 3465 50  0001 C CNN
+	1    1160 3465
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery J6
+U 1 1 6174480B
+P 1160 3150
+AR Path="/61644C06/6174480B" Ref="J6"  Part="1" 
+AR Path="/6174480B" Ref="Solar_Panel_?"  Part="1" 
+F 0 "J6" H 1268 3196 50  0000 L CNN
+F 1 "15-80V" H 1268 3105 50  0000 L CNN
+F 2 "Wire_Pads:SolderWirePad_2x_1-5mmDrill" V 1160 3210 50  0001 C CNN
+F 3 "~" V 1160 3210 50  0001 C CNN
+	1    1160 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1160 3465 1160 3350
+$Comp
+L power:+BATT #PWR?
+U 1 1 61D3F9DC
+P 10900 4350
+F 0 "#PWR?" H 10900 4200 50  0001 C CNN
+F 1 "+BATT" H 10915 4523 50  0000 C CNN
+F 2 "" H 10900 4350 50  0001 C CNN
+F 3 "" H 10900 4350 50  0001 C CNN
+	1    10900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10490 4420 10900 4420
+Wire Wire Line
+	10900 4420 10900 4350
 $EndSCHEMATC
